@@ -58,6 +58,7 @@ body{
 .inicial{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     background:linear-gradient(#f8edeb 25%,#fcd5ce 70%);
     padding: 20px;
     border-left: 2px solid rgba(248, 237, 235,.5);
@@ -127,10 +128,6 @@ body{
     display: grid;
     margin-left: 20px;
     gap: -10px;
-}
-
-.inicial .item p{
-    margin-top: -40px;
 }
 
 .item .eu{
