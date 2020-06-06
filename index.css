@@ -94,18 +94,6 @@ body{
     }
 }
 
-@media (max-height: 700px){
-
-   body{
-       height: 100vh;
-       background: linear-gradient(#fcd5ce 75%,#f8edeb);
-   }
-
-   .inicial{
-       background: linear-gradient(#fcd5ce,#f8edeb 10%);
-   }
-}
-
 .inicial .item:nth-child(1){
     grid-row: 1 / 3;
     display: block;
