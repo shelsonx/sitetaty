@@ -85,9 +85,13 @@ body{
     }
 
     .menu ul{
-        justify-content: center;
+        display: block;
     }
-
+    
+    .menu ul li{
+        margin-top: auto;
+        margin-bottom: -20px;
+    }
 }
 
 .inicial .item:nth-child(1){
