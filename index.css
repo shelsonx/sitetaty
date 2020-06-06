@@ -94,7 +94,7 @@ body{
     }
 }
 
-@media (max-height: 600px){
+@media (max-height: 700px){
 
    body{
        height: 100vh;
