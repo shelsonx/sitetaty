@@ -117,11 +117,6 @@ img{
     margin-top: 10px;
 }
 
-.inicial .item:nth-child(1) li{
-    text-align: justify;
-    margin-left: 6rem;
-}
-
 .item a {
     transition: text-shadow 0.5s;
 }
