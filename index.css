@@ -27,12 +27,15 @@ img{
     height: 220px;
 }
 
-body{
+.pagina{
     color: #ef476f;
     background:linear-gradient(#f8edeb 65%,#fcd5ce 25%);
     margin: 0 auto;
     max-width: 800px;
     font-family: 'Indie Flower', cursive;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;    
 }
 
 .menu ul{
@@ -45,7 +48,7 @@ body{
 .menu li a{
     display: block;
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Alfa Slab One', cursive;
     transition: text-shadow 0.8s;
 }
@@ -54,10 +57,11 @@ body{
     text-shadow: 0 0 10px rgba(239, 71, 111,.8);
 }
 
-
+.produtos,
 .inicial{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     align-items: center;
     background:linear-gradient(#f8edeb 25%,#fcd5ce 70%);
     padding: 20px;
@@ -65,14 +69,16 @@ body{
     box-shadow: 2px 5px 5px rgba(248, 237, 235,.5);
     border-radius: 30px;
     margin-top: -5px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @media (max-width: 600px){
+    .produtos,
     .inicial{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
     }
 
     .inicial .item{
@@ -86,12 +92,14 @@ body{
 
     .menu ul{
         display: block;
+        text-align: center;
     }
     
     .menu ul li{
         margin-top: auto;
         margin-bottom: -20px;
     }
+
 }
 
 .inicial .item:nth-child(1){
@@ -107,6 +115,11 @@ body{
 .inicial .item:nth-child(1) p, li{
     text-align: center;
     margin-top: 10px;
+}
+
+.inicial .item:nth-child(1) li{
+    text-align: justify;
+    margin-left: 6rem;
 }
 
 .item a {
@@ -145,3 +158,23 @@ body{
     transform: scale(1.1);
 }
 
+.produtos{
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.produtos h2{
+    grid-column: 1 / 4;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.produtos .item img:hover{
+    transition: transform .3s ease-in-out;
+}
+
+.produtos .item img:hover{
+    transform: skewY(2deg);
+}
